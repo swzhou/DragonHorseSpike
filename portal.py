@@ -14,5 +14,9 @@ def pull(duration):
     result = r.json()
     return result['status']
 
+@app.route('/health')
+def health():
+    return "alive"
+
 if __name__ == '__main__':
     app.run()
