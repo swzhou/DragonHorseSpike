@@ -25,3 +25,6 @@ class PortalTestCase(unittest.TestCase):
             response = self.app.get("/pull/{0}".format(duration))
 
             assert b'whatever' in response.data
+
+if __name__ == '__main__':
+    unittest.main()
